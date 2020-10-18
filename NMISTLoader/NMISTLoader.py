@@ -50,8 +50,8 @@ class Loader(object) :
         return images, labels
 
     def LoadData(self):
-        trainingData = self.LoadTrainingData(self.train_img_path, self.train_lab_path)
-        testData = self.LoadTeasData(self.test_img_path, self.test_lab_path)
+        trainingData = self.LoadTrainingData()
+        testData = self.LoadTeasData()
         return trainingData, testData
 
     def LoadTrainingData(self):
